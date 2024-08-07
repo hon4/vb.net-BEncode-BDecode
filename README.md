@@ -1,4 +1,4 @@
-# BEncode and BDecode function for Visual Basic
+# BEncode and BDecode functions for Visual Basic
 
 ## General Notes
 - Dictionaries must be always `Dictionary(Of String, Object)`
