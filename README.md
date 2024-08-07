@@ -1,4 +1,10 @@
 # BEncode function for Visual Basic
+
+## General Notes
+- Dictionaries must be always Dictionary(Of String, Object)
+- Lists must me always List(Of Object)
+- Byte arrays must me Byte(). (setting general number array {1,2,3} will throw error, use New Byte() {1,2,3})
+
 ## BEncode
 Example Usage:
 ```
