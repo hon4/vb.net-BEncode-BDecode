@@ -38,5 +38,5 @@ IO.File.WriteAllBytes("C:\Users\Administrator\Desktop\vb.torrent", benc)
 ## BDecode
 Example Usage:
 ```
-
+Dim tz As Dictionary(Of String, Object) = BDecode.BDecode(IO.File.ReadAllBytes("C:\Users\Administrator\Desktop\hello.txt.torrent"))
 ```
