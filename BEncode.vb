@@ -2,7 +2,7 @@
 '| BEncode Class by hon |
 '#======================#
 '| Coded by: hon        |
-'| Version: 2.0.0       |
+'| Version: 2.0.1       |
 '| Date: D07-M08-Y2024  |
 '| honcode.blogspot.com |
 '+----------------------+
@@ -17,7 +17,7 @@ Public Class BEncode
         Return str2bytez(s.Length & ":" & s)
     End Function
 
-    Private Shared Function BEncode_int(ByVal i As Integer) As Byte()
+    Private Shared Function BEncode_int(ByVal i As Int64) As Byte()
         Return str2bytez("i" & i & "e")
     End Function
 
