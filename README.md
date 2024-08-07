@@ -12,7 +12,7 @@ Dim tz As New Dictionary(Of String, Object)
 tz("announce") = "http://tracker.google.com/announce.php"
 
 Dim announce_list As New List(Of Object)
-announce_list.Add(New List(Of Object) From {"http://tracker.google.com/announce.php"})
+announce_list.Add(New List(Of Object) From {"http://tracker.example.com/announce.php"})
 announce_list.Add(New List(Of Object) From {"udp://tracker.opentrackr.org:1337/announce"})
 
 tz("announce-list") = announce_list
