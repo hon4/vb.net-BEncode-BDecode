@@ -37,3 +37,6 @@ IO.File.WriteAllBytes("C:\Users\Administrator\Desktop\vb.torrent", benc)
 
 ## BDecode
 Example Usage:
+```
+
+```
