@@ -4,7 +4,7 @@
 - Dictionaries must be always `Dictionary(Of String, Object)`
 - Lists must me always `List(Of Object)`
 - Byte arrays must be `Byte()`. (setting general number array `{1,2,3}` will throw error, use `New Byte() {1,2,3}`)
-- BDecoded strings are in byte array format. You can get the string using `System.Text.Encoding.UTF8.GetString(<byte>)`
+- BDecoded strings are in byte array format. You can get the string using `System.Text.Encoding.UTF8.GetString(tz("comment"))`
 
 ## BEncode
 Example Usage:
