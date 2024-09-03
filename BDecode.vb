@@ -2,7 +2,7 @@
 '| BDecode Class by hon |
 '#======================#
 '| Coded by: hon        |
-'| Version: 2.2.0       |
+'| Version: 2.2.1       |
 '| Date: D07-M08-Y2024  |
 '| honcode.blogspot.com |
 '+----------------------+
@@ -19,7 +19,7 @@ Public Class BDecode
         i += 1 'skp 'd'
         While Not b(i) = 101 '101=e
             Dim key As String = Encoding.UTF8.GetString(BDecode_str(b, i))
-            If IsNumeric(Encoding.ASCII.GetString({b(i)})) Then
+            If b(i) > 47 AndAlso b(i) < 58 Then '48=0, 57=9
                 ret(key) = BDecode_str(b, i)
             ElseIf b(i) = 105 Then '105=i
                 ret(key) = BDecode_int(b, i)
@@ -66,7 +66,7 @@ Public Class BDecode
         Dim ret As New List(Of Object)
         i += 1 'skp 'l'
         While Not b(i) = 101 '101=e
-            If IsNumeric(Encoding.ASCII.GetString({b(i)})) Then
+            If b(i) > 47 AndAlso b(i) < 58 Then '48=0, 57=9
                 ret.Add(BDecode_str(b, i))
             ElseIf b(i) = 105 Then '105=i
                 ret.Add(BDecode_int(b, i))
