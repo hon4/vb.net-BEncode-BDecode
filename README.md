@@ -43,4 +43,4 @@ Dim tz As Dictionary(Of String, Object) = BDecode.BDecode(IO.File.ReadAllBytes("
 ```
 
 ## Requirements
-- .NET Framework 2.0
+- .NET Framework 2.0 or newer.
