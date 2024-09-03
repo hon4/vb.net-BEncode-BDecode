@@ -41,3 +41,6 @@ Example Usage:
 ```
 Dim tz As Dictionary(Of String, Object) = BDecode.BDecode(IO.File.ReadAllBytes("C:\Users\Administrator\Desktop\hello.txt.torrent"))
 ```
+
+## Requirements
+- .NET Framework 2.0
